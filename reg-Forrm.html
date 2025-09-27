@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Form</title>
+    <link rel="stylesheet" href="registerForm.css" />
+    <style>
+label{
+    font-weight:bold ;
+}
+body{
+    background: radial-gradient(circle at center, #dc0fe0 10%, #f78fdbe8 50%);
+    justify-content: center;
+    display: flex;
+}
+h1{
+    text-decoration: underline;
+    text-align: center;
+}
+.form-container{
+    margin: 100px;
+}
+input,select,textarea{
+    margin-bottom: 12px;
+}
+::placeholder{
+    text-align: left;
+    font-weight: lighter;
+}
+td{
+    vertical-align: top;
+    
+}
+td label{
+    display: inline-block;
+    width: 120px;
+    
+}
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Register Form</h1>
+      <form method="post">
+        <table cellpadding="3">
+          <tr>
+            <td><label for="name">Username : </label></td>
+            <td><input type="text" id="name" placeholder="Username please" required /></td>
+          </tr>
+          <tr>
+            <td><label for="age">Age : </label></td>
+            <td><input type="number" id="age" placeholder="Age please" required /></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: middle;"><label for="address">Address : </label></td>
+            <td><textarea name=""id="address"placeholder="Type your address here...."rows="5"cols="25"></textarea></td>
+          </tr>
+          <tr>
+            <td><label for="dob" > Date of Birth :</label></td>
+            <td><input type="date" id="dob"/></td>
+          </tr>
+          <tr>
+            <td><label for="email">E-mail : </label></td>
+            <td><input type="email" id="email" placeholder="xyz@gmail.com" /></td>
+          </tr>
+          <tr>
+            <td><label for="gender">Gender : </label></td>
+            <td><input type="radio" name="gender" id="gender" />Male<input type="radio"name="gender"id="gender"/>Female<input type="radio" name="gender" id="gender" />Others</td>
+          </tr>
+          <tr>
+            <td><label for="hobbies">Select Hobbies: </label></td>
+            <td><input type="checkbox" name="hobby" id="hobbies" />Gaming<input type="checkbox" name="hobby" id="" />Reading<input type="checkbox" name="hobby" id="" />Cooking</td>
+          </tr>
+          <tr>
+            <td><label for="places"> Choose place:</label></td>
+            <td><select name="place" id="places">
+            <option value="" >Choose a place</option>
+            <option value="">Thiruvananthapuram</option>
+            <option value="">Kollam</option>
+            <option value="">Kottayam</option>
+            <option value="">Alappuzha</option>
+            <option value="">Idukki</option>
+            <option value="">Pathanamthitta</option>
+            <option value="">Eranakulam</option>
+            <option value="">Thrissur</option>
+            <option value="">Palakkad</option>
+            <option value="">Malappuram</option>
+            <option value="">Kozhikkode</option>
+            <option value="">Wayanad</option>
+            <option value="">Kannur</option>
+            <option value="">Kasargod</option></select></td>
+          </tr>
+          <tr>
+            <td><label for="files">Upload CV: </label></td>
+            <td><input type="file"><br id="files" /></td>
+          </tr>
+          <tr>
+            <td>
+            <td><button type="submit" style="background-color: rgb(134, 13, 132); color: white; border-radius: 5px;">Submit</button> <button type="reset" style="background-color: rgb(134, 13, 132); color: white; border-radius: 5px;">Cancel</button> 
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
